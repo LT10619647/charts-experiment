@@ -1,0 +1,12 @@
+figure#graph {
+  padding: 8px;
+}
+
+div#chart-tooltip {
+  position: absolute;
+  opacity: 0;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 8px;
+}

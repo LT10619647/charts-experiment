@@ -1,0 +1,18 @@
+<div class="container h-100">
+  <div class="d-flex justify-content-around flex-wrap">
+    <ng-container *ngFor="let _ of libraries">
+      <div class="card m-4 justify-content-between"
+           style="width: 320px">
+        <img class="card-img-top"
+             [src]="_.image.src"
+             [alt]="_.image.alt">
+        <div class="card-body flex-grow-0">
+          <h5 class="card-title">{{ _.name }}</h5>
+          <p class="card-text">Content-Aware Deduplication Charts using {{ _.name }}</p>
+          <a (click)="triggerNavigate(_)"
+             class="btn btn-primary">{{ _.name }} Demo</a>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
