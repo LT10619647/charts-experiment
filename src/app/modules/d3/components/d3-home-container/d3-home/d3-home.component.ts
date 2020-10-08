@@ -112,20 +112,20 @@ export class D3HomeComponent implements OnInit {
 
     let focus: fromD3.HierarchyCircularNode<unknown>
     let view: { x: number, y: number, d: number }
-    let dimensions: { width: number, height: number } = { width: this._width, height: this._height }
+    const _dimensions: { width: number, height: number } = { width: this._width, height: this._height }
 
-    // this._createSVG({
-    //   x: dimensions.width / -2,
-    //   y: dimensions.height / -2,
-    //   width: dimensions.width,
-    //   height: dimensions.height
-    // })
-    this._createSVG()
+    this._createSVG({
+      x: _dimensions.width / -2,
+      y: _dimensions.height / -2,
+      width: _dimensions.width,
+      height: _dimensions.height
+    })
+    // this._createSVG()
 
-    // this._svg.on('click', (event) => zoom({ event: <MouseEvent>event, __: root, svgEl: this._svg }))
+    this._svg.on('click', (event) => zoom({ event: <MouseEvent>event, __: root, svgEl: this._svg }))
 
     const bubblePack = (_: ChartDataElement) => fromD3.pack()
-      .size([dimensions.width, dimensions.height])
+      .size([_dimensions.width, _dimensions.height])
       .padding(5)
       (fromD3.hierarchy(_)
         // .sum(__ => (!!__.data) ? 5 - __.data['Mean Hamming Distance'] : 0))
@@ -144,16 +144,17 @@ export class D3HomeComponent implements OnInit {
       .append('div')
       .attr('id', 'chart-tooltip')
 
-    const node = this._svg.append('g')
+    const _nodeGroup = this._svg.append('g')
       .attr('pointer-events', 'all')
       .selectAll('g')
       .data(root.descendants())
       .join('g')
       .attr('transform', _ => `translate(${_.x},${_.y})`)
-      .append('circle')
+      .on('click', ($, _) => focus !== <MouseEvent | any>_ && (zoom({ event: <MouseEvent | any>$, __: <fromD3.HierarchyCircularNode<unknown> | any>_, svgEl: this._svg }), (<MouseEvent | any>$).stopPropagation()))
+
+    const _nodeCircle = _nodeGroup.append('circle')
       .attr('r', _ => _.r)
       .attr('fill', _ => _.children ? color(_.depth) : 'white')
-      // .on('click', (event, d) => focus !== <any>d && (zoom({ event: <any>event, __: <any>d, svgEl: this._svg }), (<any>event).stopPropagation()))
       .on('mouseenter', ($, _) => {
         _tooltip
           .style('position', 'absolute')
@@ -165,26 +166,81 @@ export class D3HomeComponent implements OnInit {
           .style('width', '160px')
 
         if (!!_['data']['data']) {
-          _tooltip.html(`<p style="text-align: center;">${_['data']['data']['Video1']}<br/>Mean Hamming Distance: ${_['data']['data']['Mean Hamming Distance']}</p>`)
+          _tooltip.html(`<p style='text-align: center;'>${_['data']['data']['Video1']}<br/>Mean Hamming Distance: ${_['data']['data']['Mean Hamming Distance']}</p>`)
         } else {
-          _tooltip.html(`<p style="text-align: center; margin: 0px;">${_['data']['tag']}</p>`)
+          _tooltip.html(`<p style='text-align: center; margin: 0px;'>${_['data']['tag']}</p>`)
         }
       })
-      .on('mousemove', _ => {
+      .on('mousemove', ($: MouseEvent | any) => {
         _tooltip
-          // .style('position', 'absolute')
-          // .style('display', 'block')
-          // .style('background-color', '#4285f4')
-          // .style('color', '#fafafa')
-          // .style('border-radius', '5px')
-          // .style('padding', '8px')
-          // .style('width', '160px')
-          .style('left', (_['clientX'] + 70) + 'px')
-          .style('top', (_['clientY']) + 'px')
-        // .html(`<p style="text-align: center; margin: 0px; white-space: wrap;">${(!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag']}</p>`)
+          .style('left', ($.clientX + 20) + 'px')
+          .style('top', ($.clientY) + 20 + 'px')
       })
       .on('mouseleave', _ => { _tooltip.style('display', 'none') })
 
+    const label = _nodeGroup.append('text')
+      .style('font-size', '10px')
+      .style('z-index', '1')
+      // .style('fill-opacity', d => d.parent === root ? 1 : 0)
+      .style('pointer-events', 'none')
+      .style('text-anchor', 'middle')
+      .style('display', _ => _.parent === root ? 'inline' : 'none')
+      .text(_ => (!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag'])
+
+    // const label = this._svg.append('g')
+    //   .style('font-size', '12px')
+    //   .style('pointer-events', 'none')
+    //   .style('text-anchor', 'middle')
+    //   .selectAll('text')
+    //   .data(root.descendants())
+    //   .join('text')
+    //   .style('fill-opacity', _ => _.parent === root ? 1 : 0)
+    //   .style('display', _ => _.parent === root ? 'block' : 'none')
+    //   .text(_ => (!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag'])
+
+    zoomTo([root.x, root.y, root.r * 2])
+
+    function zoomTo(v: [number, number, number] = [0, 0, 0]) {
+      view = { x: v[0], y: v[1], d: v[2] }
+      const zoomFactor: number = _dimensions.width / view.d
+
+      _nodeGroup.style('transform', _ => `translate(${(_.x - view.x) * zoomFactor}px,${(_.y - view.y) * zoomFactor}px)`)
+      _nodeCircle.attr('r', _ => _.r * zoomFactor)
+    }
+
+    function zoom(_: { event: MouseEvent, __: fromD3.HierarchyCircularNode<unknown>, svgEl: fromD3.Selection<SVGGElement, unknown, HTMLElement, any> }) {
+      const _focus = { ...focus }
+      focus = { ..._.__ }
+
+      const transition: fromD3.Transition<SVGGElement, unknown, HTMLElement, any> = _.svgEl.transition()
+        .duration(_.event.altKey ? 2500 : 750)
+        .tween('zoom', d => {
+          const i = fromD3.interpolateZoom([view.x, view.y, view.d], [focus.x, focus.y, focus.r * 2])
+          return t => zoomTo(i(t))
+        })
+
+      label
+        .filter(_ => _.parent === focus)
+        .transition(transition)
+        .style('fill-opacity', d => d.parent === focus ? 1 : 0)
+        .on('start', _ => {
+          if (_.parent === focus) {
+            _nodeGroup.style('display', 'none')
+          } else {
+            _nodeGroup.style('display', 'inline')
+            // 'none'
+          }
+        })
+        .on('end', _ => {
+          if (_.parent !== focus) {
+            // 'none'
+            _nodeGroup.style('display', 'inline')
+          } else {
+            // 'inline'
+            _nodeGroup.style('display', 'none')
+          }
+        })
+    }
   }
 
   private _treemap(_: ChartDataElement[]): void {
