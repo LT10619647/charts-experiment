@@ -84,41 +84,9 @@ export class HomeService {
           src: 'https://raw.githubusercontent.com/d3/d3-logo/master/d3.svg',
           alt: 'D3.js Logo'
         },
-        name: 'D3.js',
+        name: 'Data Visualization using D3.js',
         link: 'd3'
-      },
-      // {
-      //   image: {
-      //     src: 'https://i1.wp.com/slacker.ro/wp-content/uploads/2019/07/highcharts_logo.png?w=675&ssl=1',
-      //     alt: 'HighCharts Logo'
-      //   },
-      //   name: 'High Charts',
-      //   link: 'highcharts'
-      // },
-      // {
-      //   image: {
-      //     src: 'https://www.amcharts.com/wp-content/uploads/2017/10/amcharts_light_transparent-292x163.png',
-      //     alt: 'AmCharts Logo'
-      //   },
-      //   name: 'AmCharts',
-      //   link: 'amcharts'
-      // },
-      // {
-      //   image: {
-      //     src: 'https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_efb1b2ba6b11bd2a070628dc56b9fef5/canvasjs-charts.png',
-      //     alt: 'CanvasJS Logo'
-      //   },
-      //   name: 'CanvasJS',
-      //   link: 'canvasjs'
-      // },
-      // {
-      //   image: {
-      //     src: 'https://steemitimages.com/p/3W72119s5BjWMGm4Xa2MvD5AT2bJsSA8F9WeC71v1s1fKfGkK9mMKuc3LcvF4KigbWg9UsrpEPZ2MNDNouFg6CowMcBnRU7r9VJGN1M7GZ1xH89AteMTvn?format=match&mode=fit&width=640',
-      //     alt: 'ChartJS Logo'
-      //   },
-      //   name: 'ChartJS',
-      //   link: 'chartjs'
-      // }
+      }
     ]
 
     this._chartTypeDict = {
@@ -126,27 +94,7 @@ export class HomeService {
         { value: 'bar', viewValue: 'Bar Graph' },
         { value: 'bubble', viewValue: 'Bubble Graph' },
         { value: 'treemap', viewValue: 'TreeMap' }
-      ],
-      // highcharts: [
-      //   { value: 'bar', viewValue: 'Bar Graph' },
-      //   { value: 'bubble', viewValue: 'Bubble Graph' },
-      //   { value: 'treemap', viewValue: 'TreeMap' }
-      // ],
-      // amcharts: [
-      //   { value: 'bar', viewValue: 'Bar Graph' },
-      //   { value: 'bubble', viewValue: 'Bubble Graph' },
-      //   { value: 'treemap', viewValue: 'TreeMap' }
-      // ],
-      // canvasjs: [
-      //   { value: 'bar', viewValue: 'Bar Graph' },
-      //   { value: 'bubble', viewValue: 'Bubble Graph' },
-      //   { value: 'treemap', viewValue: 'TreeMap' }
-      // ],
-      // chartjs: [
-      //   { value: 'bar', viewValue: 'Bar Graph' },
-      //   { value: 'bubble', viewValue: 'Bubble Graph' },
-      //   { value: 'treemap', viewValue: 'TreeMap' }
-      // ]
+      ]
     }
 
     this._http.get<ChartData>('assets/data.json').subscribe(_ => {
@@ -156,9 +104,6 @@ export class HomeService {
   }
 
   setChartLibrary(): void {
-    // setChartLibrary(_: ChartLibrary): void {
-    // this._chartLibrary$.next({ ..._ })
-    // this._chartTypeList$.next(this._chartTypeDict[_.link])
     this._chartLibrary$.next(this._chartLibraries[0])
     this._chartTypeList$.next(this._chartTypeDict['d3'])
   }
