@@ -5,11 +5,11 @@ import * as fromD3 from 'd3'
 import { ChartData, ChartDataElement, ChartDataPoint, ChartLibrary, ChartType } from 'src/app/services/home.service'
 
 @Component({
-  selector: 'app-d3-home',
-  templateUrl: './d3-home.component.html',
-  styleUrls: ['./d3-home.component.scss']
+  selector: 'app-d3-phash-overview',
+  templateUrl: './d3-phash-overview.component.html',
+  styleUrls: ['./d3-phash-overview.component.scss']
 })
-export class D3HomeComponent implements OnInit {
+export class D3PhashOverviewComponent implements OnInit {
 
   private _chartData$: BehaviorSubject<ChartData>
   private _chartType$: BehaviorSubject<ChartType>
@@ -32,7 +32,7 @@ export class D3HomeComponent implements OnInit {
   set chartLibrary(value: ChartLibrary) { this._chartLibrary$.next(value) }
   get chartLibrary(): ChartLibrary { return this._chartLibrary$.getValue() }
 
-  @Output() triggerGraphChange$: EventEmitter<ChartType>
+  // @Output() triggerGraphChange$: EventEmitter<ChartType>
 
   private _svg: fromD3.Selection<SVGGElement, unknown, HTMLElement, any>
   private _margin = 50;
@@ -45,7 +45,7 @@ export class D3HomeComponent implements OnInit {
     this._chartTypeList$ = new BehaviorSubject<ChartType[]>([])
     this._chartLibrary$ = new BehaviorSubject<ChartLibrary>(null)
 
-    this.triggerGraphChange$ = new EventEmitter<ChartType>()
+    // this.triggerGraphChange$ = new EventEmitter<ChartType>()
   }
 
   ngOnInit(): void {
@@ -64,47 +64,47 @@ export class D3HomeComponent implements OnInit {
 
   }
 
-  private _bar(_: ChartDataElement[]): void {
+  // private _bar(_: ChartDataElement[]): void {
 
-    this._createSVG()
+  //   this._createSVG()
 
-    // Create the X-axis band scale
-    const xAxis: fromD3.ScaleBand<string> = fromD3.scaleBand()
-      .range([0, this._width])
-      // .domain(_.map(__ => __.Video1))
-      .domain(_.map(__ => `Video - ${__.data.index}`))
-      // .domain(_.map((__, i) => `Video ${i}`))
-      .padding(0.2)
+  //   // Create the X-axis band scale
+  //   const xAxis: fromD3.ScaleBand<string> = fromD3.scaleBand()
+  //     .range([0, this._width])
+  //     // .domain(_.map(__ => __.Video1))
+  //     .domain(_.map(__ => `Video - ${__.data.index}`))
+  //     // .domain(_.map((__, i) => `Video ${i}`))
+  //     .padding(0.2)
 
-    // Draw the X-axis on the DOM
-    this._svg.append('g')
-      .attr('transform', 'translate(0,' + this._height + ')')
-      .call(fromD3.axisBottom(xAxis))
-      .selectAll('text')
-      .attr('transform', 'rotate(-45)')
-      .style('text-anchor', 'end')
+  //   // Draw the X-axis on the DOM
+  //   this._svg.append('g')
+  //     .attr('transform', 'translate(0,' + this._height + ')')
+  //     .call(fromD3.axisBottom(xAxis))
+  //     .selectAll('text')
+  //     .attr('transform', 'rotate(-45)')
+  //     .style('text-anchor', 'end')
 
-    // Create the Y-axis band scale
-    const yAxis: fromD3.ScaleLinear<number, number> = fromD3.scaleLinear()
-      .domain([0, 100])
-      .range([this._height, 0])
+  //   // Create the Y-axis band scale
+  //   const yAxis: fromD3.ScaleLinear<number, number> = fromD3.scaleLinear()
+  //     .domain([0, 100])
+  //     .range([this._height, 0])
 
-    // Draw the Y-axis on the DOM
-    this._svg.append('g')
-      .call(fromD3.axisLeft(yAxis))
+  //   // Draw the Y-axis on the DOM
+  //   this._svg.append('g')
+  //     .call(fromD3.axisLeft(yAxis))
 
-    // Create and fill the bars
-    this._svg.selectAll('bars')
-      .data(_)
-      .enter()
-      .append('rect')
-      .attr('x', __ => xAxis(`Video - ${__.data.index}`))
-      // .attr('x', __ => xAxis(__.Video1))
-      .attr('y', __ => yAxis(__['Similarity Percent']))
-      .attr('width', xAxis.bandwidth())
-      .attr('height', __ => this._height - yAxis(__['Similarity Percent']))
-      .attr('fill', '#4285f4')
-  }
+  //   // Create and fill the bars
+  //   this._svg.selectAll('bars')
+  //     .data(_)
+  //     .enter()
+  //     .append('rect')
+  //     .attr('x', __ => xAxis(`Video - ${__.data.index}`))
+  //     // .attr('x', __ => xAxis(__.Video1))
+  //     .attr('y', __ => yAxis(__['Similarity Percent']))
+  //     .attr('width', xAxis.bandwidth())
+  //     .attr('height', __ => this._height - yAxis(__['Similarity Percent']))
+  //     .attr('fill', '#4285f4')
+  // }
 
   private _bubble(chartData: ChartDataElement): void {
 
@@ -178,14 +178,14 @@ export class D3HomeComponent implements OnInit {
       })
       .on('mouseleave', _ => { _tooltip.style('display', 'none') })
 
-    const label = _nodeGroup.append('text')
-      .style('font-size', '10px')
-      .style('z-index', '1')
-      // .style('fill-opacity', d => d.parent === root ? 1 : 0)
-      .style('pointer-events', 'none')
-      .style('text-anchor', 'middle')
-      .style('display', _ => _.parent === root ? 'inline' : 'none')
-      .text(_ => (!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag'])
+    // const label = _nodeGroup.append('text')
+    //   .style('font-size', '10px')
+    //   .style('z-index', '1')
+    //   // .style('fill-opacity', d => d.parent === root ? 1 : 0)
+    //   .style('pointer-events', 'none')
+    //   .style('text-anchor', 'middle')
+    //   .style('display', _ => _.parent === root ? 'inline' : 'none')
+    //   .text(_ => (!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag'])
 
     // const label = this._svg.append('g')
     //   .style('font-size', '12px')
@@ -219,35 +219,35 @@ export class D3HomeComponent implements OnInit {
           return t => zoomTo(i(t))
         })
 
-      label
-        .filter(_ => _.parent === focus)
-        .transition(transition)
-        .style('fill-opacity', d => d.parent === focus ? 1 : 0)
-        .on('start', _ => {
-          if (_.parent === focus) {
-            _nodeGroup.style('display', 'none')
-          } else {
-            _nodeGroup.style('display', 'inline')
-            // 'none'
-          }
-        })
-        .on('end', _ => {
-          if (_.parent !== focus) {
-            // 'none'
-            _nodeGroup.style('display', 'inline')
-          } else {
-            // 'inline'
-            _nodeGroup.style('display', 'none')
-          }
-        })
+      // label
+      //   .filter(_ => _.parent === focus)
+      //   .transition(transition)
+      //   .style('fill-opacity', d => d.parent === focus ? 1 : 0)
+      //   .on('start', _ => {
+      //     if (_.parent === focus) {
+      //       _nodeGroup.style('display', 'none')
+      //     } else {
+      //       _nodeGroup.style('display', 'inline')
+      //       // 'none'
+      //     }
+      //   })
+      //   .on('end', _ => {
+      //     if (_.parent !== focus) {
+      //       // 'none'
+      //       _nodeGroup.style('display', 'inline')
+      //     } else {
+      //       // 'inline'
+      //       _nodeGroup.style('display', 'none')
+      //     }
+      //   })
     }
   }
 
-  private _treemap(_: ChartDataElement[]): void {
-    this._createSVG()
-  }
+  // private _treemap(_: ChartDataElement[]): void {
+  //   this._createSVG()
+  // }
 
-  changeGraph(_: ChartType) {
-    this.triggerGraphChange$.emit(_)
-  }
+  // changeGraph(_: ChartType) {
+  //   this.triggerGraphChange$.emit(_)
+  // }
 }

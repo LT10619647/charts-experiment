@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { D3HomeContainerComponent } from './d3-home-container.component';
+import { DePhashResultComponent } from './de-phash-result.component';
 
-describe('D3HomeContainerComponent', () => {
-  let component: D3HomeContainerComponent;
-  let fixture: ComponentFixture<D3HomeContainerComponent>;
+describe('DePhashResultComponent', () => {
+  let component: DePhashResultComponent;
+  let fixture: ComponentFixture<DePhashResultComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ D3HomeContainerComponent ]
+      declarations: [ DePhashResultComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(D3HomeContainerComponent);
+    fixture = TestBed.createComponent(DePhashResultComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
