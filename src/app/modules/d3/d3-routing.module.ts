@@ -11,11 +11,16 @@ const routes: Routes = [
     children: [
       {
         path: 'phash',
-        component: D3PhashOverviewContainerComponent,
-      },
-      {
-        path: 'phash/:index',
-        component: D3PhashResultContainerComponent
+        children: [
+          {
+            path: '',
+            component: D3PhashOverviewContainerComponent,
+          },
+          {
+            path: ':comparison',
+            component: D3PhashResultContainerComponent
+          }
+        ]
       }
     ]
   }

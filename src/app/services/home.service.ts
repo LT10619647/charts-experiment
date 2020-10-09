@@ -17,10 +17,10 @@ export type ChartDataPoint = {
   Video2: string
   'Similarity Percent': number
   'Hamming Distance Values': number[]
-  'Time Codes': string[][]
+  'Time Codes': [string, string][]
   'Mean Hamming Distance': number
   Inference: string
-  radius: number
+  Radius: number
   Duration: string
 }
 
@@ -47,6 +47,34 @@ export type ChartType = {
   viewValue: string
 }
 
+export type SunburstData = {
+  index: number
+  similarityPercentage: number
+  firstVideo: string
+  secondVideo: string
+  duration: number
+  inference: string
+  radius?: number
+  data: {
+    timeCode: {
+      start: string
+      end: string
+    }
+    hammingDistance: number[]
+  }[]
+}
+
+export type DivergeData = {
+  index: number
+  similarityPercentage: number
+  firstVideo: string
+  secondVideo: string
+  duration: string
+  data: {
+    hammingDistance: number
+    frameNumber: number
+  }[]
+}
 @Injectable({
   providedIn: 'root'
 })
@@ -56,12 +84,11 @@ export class HomeService {
   private _chartLibraries$: BehaviorSubject<ChartLibrary[]>
 
   private _chartLibrary$: BehaviorSubject<ChartLibrary>
-
   private _chartData$: BehaviorSubject<ChartData>
-
   private _chartTypeList$: BehaviorSubject<ChartType[]>
-
   private _chartType$: BehaviorSubject<ChartType>
+  // private _chartDataPoint$: BehaviorSubject<SunburstData>
+  private _chartDataPoint$: BehaviorSubject<DivergeData>
 
   private _chartTypeDict: {
     [key: string]: ChartType[]
@@ -77,6 +104,8 @@ export class HomeService {
     this._chartData$ = new BehaviorSubject<ChartData>(null)
     this._chartTypeList$ = new BehaviorSubject<ChartType[]>([])
     this._chartType$ = new BehaviorSubject<ChartType>(null)
+    // this._chartDataPoint$ = new BehaviorSubject<SunburstData>(null)
+    this._chartDataPoint$ = new BehaviorSubject<DivergeData>(null)
 
     this._chartLibraries = [
       {
@@ -84,7 +113,7 @@ export class HomeService {
           src: 'https://raw.githubusercontent.com/d3/d3-logo/master/d3.svg',
           alt: 'D3.js Logo'
         },
-        name: 'Data Visualization using D3.js',
+        name: 'Data Visualization',
         link: 'd3'
       }
     ]
@@ -97,7 +126,7 @@ export class HomeService {
       ]
     }
 
-    this._http.get<ChartData>('assets/data.json').subscribe(_ => {
+    this._http.get<ChartData>('assets/phash/phash-minimal.json').subscribe(_ => {
       this._chartData$.next({ ..._ })
     })
 
@@ -134,6 +163,16 @@ export class HomeService {
 
   watchChartType(): Observable<ChartType> {
     return this._chartType$.asObservable()
+  }
+
+  fetchDataPoint(_: { index: number }): void {
+    // this._http.get<SunburstData>(`assets/phash/phash-comparison-${_.index}.json`).subscribe(_ => { this._chartDataPoint$.next(_) })
+    this._http.get<DivergeData>(`assets/phash/phash-comparison-${_.index}.json`).subscribe(_ => { this._chartDataPoint$.next(_) })
+  }
+
+  // watchDataPoint(): Observable<SunburstData> {
+  watchDataPoint(): Observable<DivergeData> {
+    return this._chartDataPoint$.asObservable()
   }
 
 }

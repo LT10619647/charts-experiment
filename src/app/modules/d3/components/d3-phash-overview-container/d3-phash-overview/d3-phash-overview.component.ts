@@ -1,8 +1,28 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
+import { Component, Input, OnInit, } from '@angular/core'
 import { BehaviorSubject } from 'rxjs'
-import * as fromD3 from 'd3'
 
-import { ChartData, ChartDataElement, ChartDataPoint, ChartLibrary, ChartType } from 'src/app/services/home.service'
+import {
+  hierarchy,
+  HierarchyCircularNode,
+  interpolateRgb,
+  interpolateZoom,
+  pack,
+  scaleLinear,
+  select,
+  Selection,
+  Transition
+} from 'd3'
+import { ChartData, ChartDataElement, ChartLibrary, ChartType } from 'src/app/services/home.service'
+
+type _PHashMouseEvent = MouseEvent | any
+type _PHashHierarchy = HierarchyCircularNode<unknown> | any
+
+type _PHashDimension = {
+  x: number
+  y: number
+  width: number
+  height: number
+}
 
 @Component({
   selector: 'app-d3-phash-overview',
@@ -34,7 +54,7 @@ export class D3PhashOverviewComponent implements OnInit {
 
   // @Output() triggerGraphChange$: EventEmitter<ChartType>
 
-  private _svg: fromD3.Selection<SVGGElement, unknown, HTMLElement, any>
+  private _svg: Selection<SVGGElement, unknown, HTMLElement, any>
   private _margin = 50;
   private _width = 768 - (this._margin * 2);
   private _height = 768 - (this._margin * 2);
@@ -52,10 +72,10 @@ export class D3PhashOverviewComponent implements OnInit {
     this._chartData$.subscribe(_ => { if (!!_) this._bubble(_.data) })
   }
 
-  private _createSVG(_?: { x: number, y: number, width: number, height: number }): void {
-    if (!fromD3.select('figure#graph svg').empty()) fromD3.select('figure#graph svg').remove()
+  private _createSVG(_?: _PHashDimension): void {
+    if (!select('figure#graph svg').empty()) select('figure#graph svg').remove()
 
-    this._svg = fromD3.select('figure#graph')
+    this._svg = select('figure#graph')
       .append('svg')
     if (!!_) this._svg.attr('viewBox', `${_.x} ${_.y} ${_.width} ${_.height}`)
 
@@ -64,53 +84,12 @@ export class D3PhashOverviewComponent implements OnInit {
 
   }
 
-  // private _bar(_: ChartDataElement[]): void {
-
-  //   this._createSVG()
-
-  //   // Create the X-axis band scale
-  //   const xAxis: fromD3.ScaleBand<string> = fromD3.scaleBand()
-  //     .range([0, this._width])
-  //     // .domain(_.map(__ => __.Video1))
-  //     .domain(_.map(__ => `Video - ${__.data.index}`))
-  //     // .domain(_.map((__, i) => `Video ${i}`))
-  //     .padding(0.2)
-
-  //   // Draw the X-axis on the DOM
-  //   this._svg.append('g')
-  //     .attr('transform', 'translate(0,' + this._height + ')')
-  //     .call(fromD3.axisBottom(xAxis))
-  //     .selectAll('text')
-  //     .attr('transform', 'rotate(-45)')
-  //     .style('text-anchor', 'end')
-
-  //   // Create the Y-axis band scale
-  //   const yAxis: fromD3.ScaleLinear<number, number> = fromD3.scaleLinear()
-  //     .domain([0, 100])
-  //     .range([this._height, 0])
-
-  //   // Draw the Y-axis on the DOM
-  //   this._svg.append('g')
-  //     .call(fromD3.axisLeft(yAxis))
-
-  //   // Create and fill the bars
-  //   this._svg.selectAll('bars')
-  //     .data(_)
-  //     .enter()
-  //     .append('rect')
-  //     .attr('x', __ => xAxis(`Video - ${__.data.index}`))
-  //     // .attr('x', __ => xAxis(__.Video1))
-  //     .attr('y', __ => yAxis(__['Similarity Percent']))
-  //     .attr('width', xAxis.bandwidth())
-  //     .attr('height', __ => this._height - yAxis(__['Similarity Percent']))
-  //     .attr('fill', '#4285f4')
-  // }
-
   private _bubble(chartData: ChartDataElement): void {
 
     // https://observablehq.com/@d3/zoomable-circle-packing?collection=@d3/d3-hierarchy
+    // https://fabiofranchino.com/blog/the-new-d3.js-join-method-is-awesome-for-t/
 
-    let focus: fromD3.HierarchyCircularNode<unknown>
+    let focus: HierarchyCircularNode<unknown>
     let view: { x: number, y: number, d: number }
     const _dimensions: { width: number, height: number } = { width: this._width, height: this._height }
 
@@ -120,29 +99,37 @@ export class D3PhashOverviewComponent implements OnInit {
       width: _dimensions.width,
       height: _dimensions.height
     })
-    // this._createSVG()
 
-    this._svg.on('click', (event) => zoom({ event: <MouseEvent>event, __: root, svgEl: this._svg }))
+    this._svg.on('click', ($: _PHashMouseEvent) => zoom({ event: <_PHashMouseEvent>$, __: root, svgEl: this._svg }))
 
-    const bubblePack = (_: ChartDataElement) => fromD3.pack()
+    const bubblePack = (_: ChartDataElement) => pack()
       .size([_dimensions.width, _dimensions.height])
       .padding(5)
-      (fromD3.hierarchy(_)
-        // .sum(__ => (!!__.data) ? 5 - __.data['Mean Hamming Distance'] : 0))
-        .sum(__ => (!!__.data) ? __.data.radius : 0))
+      (hierarchy(_)
+        .sum(__ => (!!__.data) ? __.data.Radius : 0))
 
     const root = bubblePack(chartData)
 
-    const color = fromD3.scaleLinear<string, string>()
+    const color = scaleLinear<string, string>()
       // .domain([0, root.descendants().length])
       .domain([0, 5])
       .range(['#b3ebf2', '#1b5e20'])
-      .interpolate(fromD3.interpolateRgb)
+      .interpolate(interpolateRgb)
 
 
-    const _tooltip = fromD3.select('figure#graph')
+    const _tooltip = select('figure#graph')
       .append('div')
       .attr('id', 'chart-tooltip')
+      .style('position', 'absolute')
+      .style('display', 'none')
+      .style('justify-content', 'center')
+      .style('background-color', '#616161e6')
+      .style('color', '#fafafa')
+      .style('border-radius', '4px')
+      .style('padding', '4px 8px')
+      .style('font-size', '12px')
+      .style('box-shadow', '0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)')
+    // .style('width', '160px')
 
     const _nodeGroup = this._svg.append('g')
       .attr('pointer-events', 'all')
@@ -150,28 +137,25 @@ export class D3PhashOverviewComponent implements OnInit {
       .data(root.descendants())
       .join('g')
       .attr('transform', _ => `translate(${_.x},${_.y})`)
-      .on('click', ($, _) => focus !== <MouseEvent | any>_ && (zoom({ event: <MouseEvent | any>$, __: <fromD3.HierarchyCircularNode<unknown> | any>_, svgEl: this._svg }), (<MouseEvent | any>$).stopPropagation()))
+      .on('click', ($, _) => focus !== <_PHashMouseEvent>_ && (zoom({ event: <_PHashMouseEvent>$, __: <_PHashHierarchy>_, svgEl: this._svg }), (<_PHashMouseEvent>$).stopPropagation()))
 
     const _nodeCircle = _nodeGroup.append('circle')
       .attr('r', _ => _.r)
       .attr('fill', _ => _.children ? color(_.depth) : 'white')
-      .on('mouseenter', ($, _) => {
-        _tooltip
-          .style('position', 'absolute')
-          .style('display', 'block')
-          .style('background-color', '#4285f4')
-          .style('color', '#fafafa')
-          .style('border-radius', '5px')
-          .style('padding', '8px')
-          .style('width', '160px')
+      .on('mouseenter', ($: _PHashMouseEvent, _: _PHashHierarchy) => {
+        _tooltip.style('display', 'flex')
+        let _htmlString: string = ''
 
         if (!!_['data']['data']) {
-          _tooltip.html(`<p style='text-align: center;'>${_['data']['data']['Video1']}<br/>Mean Hamming Distance: ${_['data']['data']['Mean Hamming Distance']}</p>`)
+          _htmlString = `<p class="m-0 text-center">Mean Hamming Distance: ${(<ChartDataElement>(<HierarchyCircularNode<unknown>>_).data).data['Mean Hamming Distance']}</p>`
+          _tooltip.html(_htmlString)
         } else {
-          _tooltip.html(`<p style='text-align: center; margin: 0px;'>${_['data']['tag']}</p>`)
+          _htmlString = `<p class="m-0 text-center">Cluster: ${_['data']['tag']}</p>`
+          _tooltip.html(_htmlString)
         }
+
       })
-      .on('mousemove', ($: MouseEvent | any) => {
+      .on('mousemove', ($: _PHashMouseEvent) => {
         _tooltip
           .style('left', ($.clientX + 20) + 'px')
           .style('top', ($.clientY) + 20 + 'px')
@@ -208,14 +192,14 @@ export class D3PhashOverviewComponent implements OnInit {
       _nodeCircle.attr('r', _ => _.r * zoomFactor)
     }
 
-    function zoom(_: { event: MouseEvent, __: fromD3.HierarchyCircularNode<unknown>, svgEl: fromD3.Selection<SVGGElement, unknown, HTMLElement, any> }) {
+    function zoom(_: { event: MouseEvent, __: HierarchyCircularNode<unknown>, svgEl: Selection<SVGGElement, unknown, HTMLElement, any> }) {
       const _focus = { ...focus }
       focus = { ..._.__ }
 
-      const transition: fromD3.Transition<SVGGElement, unknown, HTMLElement, any> = _.svgEl.transition()
+      const transition: Transition<SVGGElement, unknown, HTMLElement, any> = _.svgEl.transition()
         .duration(_.event.altKey ? 2500 : 750)
         .tween('zoom', d => {
-          const i = fromD3.interpolateZoom([view.x, view.y, view.d], [focus.x, focus.y, focus.r * 2])
+          const i = interpolateZoom([view.x, view.y, view.d], [focus.x, focus.y, focus.r * 2])
           return t => zoomTo(i(t))
         })
 
@@ -242,12 +226,4 @@ export class D3PhashOverviewComponent implements OnInit {
       //   })
     }
   }
-
-  // private _treemap(_: ChartDataElement[]): void {
-  //   this._createSVG()
-  // }
-
-  // changeGraph(_: ChartType) {
-  //   this.triggerGraphChange$.emit(_)
-  // }
 }

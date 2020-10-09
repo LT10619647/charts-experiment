@@ -1,13 +1,23 @@
 import { Component, OnInit } from '@angular/core'
+import { Observable } from 'rxjs'
+import { SunburstData, HomeService, DivergeData } from 'src/app/services/home.service'
 
 @Component({
   selector: 'app-d3-phash-result-container',
-  template: `<app-de-phash-result></app-de-phash-result>`
+  template: `<app-de-phash-result [dataPoint] = "dataPoint$ | async"></app-de-phash-result>`
 })
 export class D3PhashResultContainerComponent implements OnInit {
 
-  constructor() { }
+  // dataPoint$: Observable<SunburstData>
+  dataPoint$: Observable<DivergeData>
 
-  ngOnInit(): void { }
+  constructor(
+    private _homeService: HomeService
+  ) { }
+
+  ngOnInit(): void {
+    this._homeService.fetchDataPoint({ index: 1 })
+    this.dataPoint$ = this._homeService.watchDataPoint()
+  }
 
 }
