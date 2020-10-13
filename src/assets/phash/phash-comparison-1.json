@@ -1,0 +1,2506 @@
+{
+  "index": 1,
+  "similarityPercentage": 82,
+  "firstVideo": "JungleBookTrailer-10SecBlankScreenatStartNend.mp4",
+  "secondVideo": "The Jungle Book Official Trailer 1 (2016) Scarlett Johansson Live-Action Disney Movie HD.mp4",
+  "inference": "Close Perceptibility",
+  "data": [
+    {
+      "hammingDistance": 0,
+      "frameNumber": 1
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 2
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 3
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 4
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 5
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 6
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 7
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 8
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 9
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 10
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 11
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 12
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 13
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 14
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 15
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 16
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 17
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 18
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 19
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 20
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 21
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 22
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 23
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 24
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 25
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 26
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 27
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 28
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 29
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 30
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 31
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 32
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 33
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 34
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 35
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 36
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 37
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 38
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 39
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 40
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 41
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 42
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 43
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 44
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 45
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 46
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 47
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 48
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 49
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 50
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 51
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 52
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 53
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 54
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 55
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 56
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 57
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 58
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 59
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 60
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 61
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 62
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 63
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 64
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 65
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 66
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 67
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 68
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 69
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 70
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 71
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 72
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 73
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 74
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 75
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 76
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 77
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 78
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 79
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 80
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 81
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 82
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 83
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 84
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 85
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 86
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 87
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 88
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 89
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 90
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 91
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 92
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 93
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 94
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 95
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 96
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 97
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 98
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 99
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 100
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 101
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 102
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 103
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 104
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 105
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 106
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 107
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 108
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 109
+    },
+    {
+      "hammingDistance": 4,
+      "frameNumber": 110
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 111
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 112
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 113
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 114
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 115
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 116
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 117
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 118
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 119
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 120
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 121
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 122
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 123
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 124
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 125
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 126
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 127
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 128
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 129
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 130
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 131
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 132
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 133
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 134
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 135
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 136
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 137
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 138
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 139
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 140
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 141
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 142
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 143
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 144
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 145
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 146
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 147
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 148
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 149
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 150
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 151
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 152
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 153
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 154
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 155
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 156
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 157
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 158
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 159
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 160
+    },
+    {
+      "hammingDistance": 0,
+      "frameNumber": 161
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 162
+    },
+    {
+      "hammingDistance": 4,
+      "frameNumber": 163
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 164
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 165
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 166
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 167
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 168
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 169
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 170
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 171
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 172
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 173
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 174
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 175
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 176
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 177
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 178
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 179
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 180
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 181
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 182
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 183
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 184
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 185
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 186
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 187
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 188
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 189
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 190
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 191
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 192
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 193
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 194
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 195
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 196
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 197
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 198
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 199
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 200
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 201
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 202
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 203
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 204
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 205
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 206
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 207
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 208
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 209
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 210
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 211
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 212
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 213
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 214
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 215
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 216
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 217
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 218
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 219
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 220
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 221
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 222
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 223
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 224
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 225
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 226
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 227
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 228
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 229
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 230
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 231
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 232
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 233
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 234
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 235
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 236
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 237
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 238
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 239
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 240
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 241
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 242
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 243
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 244
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 245
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 246
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 247
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 248
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 249
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 250
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 251
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 252
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 253
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 254
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 255
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 256
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 257
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 258
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 259
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 260
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 261
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 262
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 263
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 264
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 265
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 266
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 267
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 268
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 269
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 270
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 271
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 272
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 273
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 274
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 275
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 276
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 277
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 278
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 279
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 280
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 281
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 282
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 283
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 284
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 285
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 286
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 287
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 288
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 289
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 290
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 291
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 292
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 293
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 294
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 295
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 296
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 297
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 298
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 299
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 300
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 301
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 302
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 303
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 304
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 305
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 306
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 307
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 308
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 309
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 310
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 311
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 312
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 313
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 314
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 315
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 316
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 317
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 318
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 319
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 320
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 321
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 322
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 323
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 324
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 325
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 326
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 327
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 328
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 329
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 330
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 331
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 332
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 333
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 334
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 335
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 336
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 337
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 338
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 339
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 340
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 341
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 342
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 343
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 344
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 345
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 346
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 347
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 348
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 349
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 350
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 351
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 352
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 353
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 354
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 355
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 356
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 357
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 358
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 359
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 360
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 361
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 362
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 363
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 364
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 365
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 366
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 367
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 368
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 369
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 370
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 371
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 372
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 373
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 374
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 375
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 376
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 377
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 378
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 379
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 380
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 381
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 382
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 383
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 384
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 385
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 386
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 387
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 388
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 389
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 390
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 391
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 392
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 393
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 394
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 395
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 396
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 397
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 398
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 399
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 400
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 401
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 402
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 403
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 404
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 405
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 406
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 407
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 408
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 409
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 410
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 411
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 412
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 413
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 414
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 415
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 416
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 417
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 418
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 419
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 420
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 421
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 422
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 423
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 424
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 425
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 426
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 427
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 428
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 429
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 430
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 431
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 432
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 433
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 434
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 435
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 436
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 437
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 438
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 439
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 440
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 441
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 442
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 443
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 444
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 445
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 446
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 447
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 448
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 449
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 450
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 451
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 452
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 453
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 454
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 455
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 456
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 457
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 458
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 459
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 460
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 461
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 462
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 463
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 464
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 465
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 466
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 467
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 468
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 469
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 470
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 471
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 472
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 473
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 474
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 475
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 476
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 477
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 478
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 479
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 480
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 481
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 482
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 483
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 484
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 485
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 486
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 487
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 488
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 489
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 490
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 491
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 492
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 493
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 494
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 495
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 496
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 497
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 498
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 499
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 500
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 501
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 502
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 503
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 504
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 505
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 506
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 507
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 508
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 509
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 510
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 511
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 512
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 513
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 514
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 515
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 516
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 517
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 518
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 519
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 520
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 521
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 522
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 523
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 524
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 525
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 526
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 527
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 528
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 529
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 530
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 531
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 532
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 533
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 534
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 535
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 536
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 537
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 538
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 539
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 540
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 541
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 542
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 543
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 544
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 545
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 546
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 547
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 548
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 549
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 550
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 551
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 552
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 553
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 554
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 555
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 556
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 557
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 558
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 559
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 560
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 561
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 562
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 563
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 564
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 565
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 566
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 567
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 568
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 569
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 570
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 571
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 572
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 573
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 574
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 575
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 576
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 577
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 578
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 579
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 580
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 581
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 582
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 583
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 584
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 585
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 586
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 587
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 588
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 589
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 590
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 591
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 592
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 593
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 594
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 595
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 596
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 597
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 598
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 599
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 600
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 601
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 602
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 603
+    },
+    {
+      "hammingDistance": 1,
+      "frameNumber": 604
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 605
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 606
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 607
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 608
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 609
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 610
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 611
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 612
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 613
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 614
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 615
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 616
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 617
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 618
+    },
+    {
+      "hammingDistance": 2,
+      "frameNumber": 619
+    },
+    {
+      "hammingDistance": 3,
+      "frameNumber": 620
+    },
+    {
+      "hammingDistance": 4,
+      "frameNumber": 621
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 622
+    },
+    {
+      "hammingDistance": 5,
+      "frameNumber": 623
+    },
+    {
+      "hammingDistance": 4,
+      "frameNumber": 624
+    }
+  ],
+  "duration": "0:00:25.877000"
+}

@@ -231,7 +231,7 @@ export class D3ColorBarComponent implements OnInit {
             .html("The Start Time is " + a + 's<br> The End time is ' + b + 's')
             .style('left', (d['clientX'] + 10) + 'px')
             .style('top', (d['clientY'] + 60) + 'px')
-          console.log(d['clientY'] + 60)
+          // console.log(d['clientY'] + 60)
         }
       }
     }
