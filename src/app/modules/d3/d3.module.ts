@@ -7,13 +7,16 @@ import { D3PhashOverviewContainerComponent } from './components/d3-phash-overvie
 import { D3PhashOverviewComponent } from './components/d3-phash-overview-container/d3-phash-overview/d3-phash-overview.component'
 import { D3PhashResultContainerComponent } from './components/d3-phash-result-container/d3-phash-result-container.component'
 import { DePhashResultComponent } from './components/d3-phash-result-container/de-phash-result/de-phash-result.component'
+import { D3ColorBarContainerComponent } from './components/d3-color-bar-container/d3-color-bar-container.component'
+import { D3ColorBarComponent } from './components/d3-color-bar-container/d3-color-bar/d3-color-bar.component'
 
 
 @NgModule({
   declarations: [
     D3ShellComponent,
     D3PhashOverviewContainerComponent, D3PhashOverviewComponent,
-    D3PhashResultContainerComponent, DePhashResultComponent
+    D3PhashResultContainerComponent, DePhashResultComponent,
+    D3ColorBarContainerComponent, D3ColorBarComponent
   ],
   imports: [
     CommonModule,

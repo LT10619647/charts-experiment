@@ -47,6 +47,15 @@ export type ChartType = {
   viewValue: string
 }
 
+export type BarChartData = {
+  fileName: string
+  total_duration: number
+  duration_of_color: {
+    start: number
+    end: number
+  }[]
+}
+
 export type SunburstData = {
   index: number
   similarityPercentage: number
@@ -90,6 +99,8 @@ export class HomeService {
   // private _chartDataPoint$: BehaviorSubject<SunburstData>
   private _chartDataPoint$: BehaviorSubject<DivergeData>
 
+  private _barChartData$: BehaviorSubject<BarChartData>
+
   private _chartTypeDict: {
     [key: string]: ChartType[]
   }
@@ -100,7 +111,7 @@ export class HomeService {
 
     this._chartLibraries$ = new BehaviorSubject<ChartLibrary[]>([])
     this._chartLibrary$ = new BehaviorSubject<ChartLibrary>(null)
-
+    this._barChartData$ = new BehaviorSubject<BarChartData>(null)
     this._chartData$ = new BehaviorSubject<ChartData>(null)
     this._chartTypeList$ = new BehaviorSubject<ChartType[]>([])
     this._chartType$ = new BehaviorSubject<ChartType>(null)
@@ -130,6 +141,10 @@ export class HomeService {
       this._chartData$.next({ ..._ })
     })
 
+    this._http.get<BarChartData>('assets/colorBar.json').subscribe(_ => {
+      this._barChartData$.next({ ..._ })
+    })
+
   }
 
   setChartLibrary(): void {
@@ -151,6 +166,10 @@ export class HomeService {
 
   watchChartData(): Observable<ChartData> {
     return this._chartData$.asObservable()
+  }
+
+  watchBarChartData(): Observable<BarChartData> {
+    return this._barChartData$.asObservable()
   }
 
   watchChartTypeList(): Observable<ChartType[]> {

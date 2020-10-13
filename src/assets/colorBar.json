@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "fileName": "my_video.mp4",
+      "total_duration": "0:5.91998888888889",
+      "duration_of_color": [
+        {
+          "start": 33.0,
+          "end": 77.0
+        }
+      ]
+    },
+    {
+      "fileName": "my_video_color_end.mp4",
+      "total_duration": "2:48.0",
+      "duration_of_color": [
+        {
+          "start": 34.0,
+          "end": 78.0
+        },
+        {
+          "start": 170.0,
+          "end": 204.0
+        }
+      ]
+    },
+    {
+      "fileName": "my_video_color_end_first_fps.mp4",
+      "total_duration": "3:24.0",
+      "duration_of_color": [
+        {
+          "start": 0.13333333333333333,
+          "end": 3.066666666666667
+        },
+        {
+          "start": 9.266666666666667,
+          "end": 11.466666666666667
+        }
+      ]
+    },
+    {
+      "fileName": "my_video_color_end_first_fps_15.mp4",
+      "total_duration": "0:14.466666666666667",
+      "duration_of_color": [
+        {
+          "start": 2.3333333333333335,
+          "end": 5.2
+        },
+        {
+          "start": 11.4,
+          "end": 13.6
+        }
+      ]
+    },
+    {
+      "fileName": "my_video_color_end_fps_15.mp4",
+      "total_duration": "0:13.6",
+      "duration_of_color": [
+        {
+          "start": 6.266666666666667,
+          "end": 8.466666666666667
+        }
+      ]
+    },
+    {
+      "fileName": "my_video_color_first_fps_15.mp4",
+      "total_duration": "0:8.466666666666667",
+      "duration_of_color": [
+        {
+          "start": 2.933333333333333,
+          "end": 3.0
+        }
+      ]
+    },
+    {
+      "fileName": "my_video_no_color_bar.mp4",
+      "total_duration": "0:9.066666666666666",
+      "duration_of_color": []
+    }
+  ]
+}
