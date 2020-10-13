@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { D3AwayComponent } from './d3-away.component';
+import { D3ColorBarComponent } from './d3-color-bar.component';
 
-describe('D3AwayComponent', () => {
-  let component: D3AwayComponent;
-  let fixture: ComponentFixture<D3AwayComponent>;
+describe('D3ColorBarComponent', () => {
+  let component: D3ColorBarComponent;
+  let fixture: ComponentFixture<D3ColorBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ D3AwayComponent ]
+      declarations: [D3ColorBarComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(D3AwayComponent);
+    fixture = TestBed.createComponent(D3ColorBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
