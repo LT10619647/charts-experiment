@@ -55,9 +55,9 @@ export class D3PhashOverviewComponent implements OnInit {
   // @Output() triggerGraphChange$: EventEmitter<ChartType>
 
   private _svg: Selection<SVGGElement, unknown, HTMLElement, any>
-  private _margin = 50;
-  private _width = 768 - (this._margin * 2);
-  private _height = 768 - (this._margin * 2);
+  private _margin = 20;
+  private _width = 808 - (this._margin * 2);
+  private _height = 808 - (this._margin * 2);
 
   constructor() {
     this._chartData$ = new BehaviorSubject<ChartData>(null)
@@ -147,10 +147,10 @@ export class D3PhashOverviewComponent implements OnInit {
         let _htmlString: string = ''
 
         if (!!_['data']['data']) {
-          _htmlString = `<p class="m-0 text-center">Mean Hamming Distance: ${(<ChartDataElement>(<HierarchyCircularNode<unknown>>_).data).data['Mean Hamming Distance']}</p>`
+          _htmlString += `<p class="m-0 text-center">Mean Hamming Distance: ${(<ChartDataElement>(<HierarchyCircularNode<unknown>>_).data).data['Mean Hamming Distance']}</p>`
           _tooltip.html(_htmlString)
         } else {
-          _htmlString = `<p class="m-0 text-center">Cluster: ${_['data']['tag']}</p>`
+          _htmlString += `<p class="m-0 text-center">Cluster: ${_['data']['tag']}</p>`
           _tooltip.html(_htmlString)
         }
 
@@ -162,14 +162,13 @@ export class D3PhashOverviewComponent implements OnInit {
       })
       .on('mouseleave', _ => { _tooltip.style('display', 'none') })
 
-    // const label = _nodeGroup.append('text')
-    //   .style('font-size', '10px')
-    //   .style('z-index', '1')
-    //   // .style('fill-opacity', d => d.parent === root ? 1 : 0)
-    //   .style('pointer-events', 'none')
-    //   .style('text-anchor', 'middle')
-    //   .style('display', _ => _.parent === root ? 'inline' : 'none')
-    //   .text(_ => (!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag'])
+    const label = _nodeGroup.append('text')
+      .style('font-size', '10px')
+      // .style('fill-opacity', d => d.parent === root ? 1 : 0)
+      .style('pointer-events', 'none')
+      .style('text-anchor', 'middle')
+      // .style('display', _ => _.parent === root ? 'inline' : 'none')
+      .text(_ => (!!_['data']['data']) ? _['data']['data']['Video1'] : _['data']['tag'])
 
     // const label = this._svg.append('g')
     //   .style('font-size', '12px')
@@ -193,7 +192,6 @@ export class D3PhashOverviewComponent implements OnInit {
     }
 
     function zoom(_: { event: MouseEvent, __: HierarchyCircularNode<unknown>, svgEl: Selection<SVGGElement, unknown, HTMLElement, any> }) {
-      const _focus = { ...focus }
       focus = { ..._.__ }
 
       const transition: Transition<SVGGElement, unknown, HTMLElement, any> = _.svgEl.transition()
@@ -203,27 +201,32 @@ export class D3PhashOverviewComponent implements OnInit {
           return t => zoomTo(i(t))
         })
 
-      // label
-      //   .filter(_ => _.parent === focus)
-      //   .transition(transition)
-      //   .style('fill-opacity', d => d.parent === focus ? 1 : 0)
-      //   .on('start', _ => {
-      //     if (_.parent === focus) {
-      //       _nodeGroup.style('display', 'none')
-      //     } else {
-      //       _nodeGroup.style('display', 'inline')
-      //       // 'none'
-      //     }
-      //   })
-      //   .on('end', _ => {
-      //     if (_.parent !== focus) {
-      //       // 'none'
-      //       _nodeGroup.style('display', 'inline')
-      //     } else {
-      //       // 'inline'
-      //       _nodeGroup.style('display', 'none')
-      //     }
-      //   })
+      label
+        .filter(_ => _.parent === focus)
+        .style('opacity', _ => {
+          console.log(focus)
+          console.log(_)
+          return 1
+        })
+        .transition(transition)
+        .style('fill-opacity', d => d.parent === focus ? 1 : 0)
+        .on('start', _ => {
+          if (_.parent === focus) {
+            _nodeGroup.style('display', 'none')
+          } else {
+            _nodeGroup.style('display', 'inline')
+            // 'none'
+          }
+        })
+        .on('end', _ => {
+          if (_.parent !== focus) {
+            // 'none'
+            _nodeGroup.style('display', 'inline')
+          } else {
+            // 'inline'
+            _nodeGroup.style('display', 'none')
+          }
+        })
     }
   }
 }
