@@ -16,7 +16,7 @@ export class D3PhashResultContainerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._homeService.fetchDataPoint({ index: 1 })
+    this._homeService.fetchDataPoint({ index: 2 })
     this.dataPoint$ = this._homeService.watchDataPoint()
   }
 

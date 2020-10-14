@@ -79,10 +79,14 @@ export type DivergeData = {
   firstVideo: string
   secondVideo: string
   duration: string
-  data: {
-    hammingDistance: number
-    frameNumber: number
-  }[]
+  // data: {
+  //   hammingDistance: number
+  //   frameNumber: number
+  // }[]
+  hammingDistances: number[]
+  meanHammingDistance: number
+  inference: string
+  firstVideoFPS: number
 }
 @Injectable({
   providedIn: 'root'
